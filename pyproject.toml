@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "manim-ppt"
+version = "0.1.0"
+description = "Export Manim animations as native, editable PowerPoint shapes animated with Morph."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "manim>=0.19",
+    "python-pptx>=1.0",
+    "numpy",
+    "lxml",
+    "pillow",
+]
+keywords = ["manim", "powerpoint", "pptx", "slides", "morph", "animation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/udiram/manim-ppt"
+
+[tool.hatch.build.targets.wheel]
+packages = ["manim_ppt"]
