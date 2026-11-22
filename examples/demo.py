@@ -1,5 +1,10 @@
-"""Render with:  manim -ql examples/demo.py Demo
-The deck is written to media/pptx/Demo.pptx."""
+"""A tour of what survives the trip into PowerPoint.
+
+    manim-ppt examples/demo.py            # deck only, fast
+    manim -ql examples/demo.py Demo       # video + deck
+
+Each play() is one click in the slideshow.
+"""
 
 from manim import *
 
